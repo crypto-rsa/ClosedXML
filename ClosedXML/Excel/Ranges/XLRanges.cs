@@ -52,7 +52,7 @@ namespace ClosedXML.Excel
         /// </summary>
         /// <param name="match">Criteria to filter ranges. Only those ranges that satisfy the criteria will be removed.
         /// Null means the entire collection should be cleared.</param>
-        /// <param name="releaseEventHandlers">Specify whether or not should removed ranges be unsubscribed from 
+        /// <param name="releaseEventHandlers">Specify whether or not should removed ranges be unsubscribed from
         /// row/column shifting events. Until ranges are unsubscribed they cannot be collected by GC.</param>
         public void RemoveAll(Predicate<IXLRange> match = null, bool releaseEventHandlers = true)
         {

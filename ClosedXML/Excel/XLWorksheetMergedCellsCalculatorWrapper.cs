@@ -14,7 +14,7 @@ namespace ClosedXML.Excel
 
         public XLWorksheetMergedCellsCalculatorWrapper(IEnumerable<XLColumn> columns)
         {
-            _worksheets = columns.Select( c => c.Worksheet ).Distinct().ToList();
+            _worksheets = columns.Select(c => c.Worksheet).Distinct().ToList();
             _worksheets.ForEach(w => w.Internals.MergedRanges.CalculateMergedCells());
         }
 

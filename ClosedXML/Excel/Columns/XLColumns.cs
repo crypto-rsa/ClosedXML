@@ -70,16 +70,16 @@ namespace ClosedXML.Excel
 
         public IXLColumns AdjustToContents()
         {
-            using(new XLWorksheetMergedCellsCalculatorWrapper(_columns))
+            using (new XLWorksheetMergedCellsCalculatorWrapper(_columns))
             {
-                _columns.ForEach( c => c.AdjustToContents() ); 
+                _columns.ForEach(c => c.AdjustToContents());
             }
             return this;
         }
 
         public IXLColumns AdjustToContents(Int32 startRow)
         {
-            using(new XLWorksheetMergedCellsCalculatorWrapper(_columns))
+            using (new XLWorksheetMergedCellsCalculatorWrapper(_columns))
             {
                 _columns.ForEach(c => c.AdjustToContents(startRow));
             }
@@ -88,7 +88,7 @@ namespace ClosedXML.Excel
 
         public IXLColumns AdjustToContents(Int32 startRow, Int32 endRow)
         {
-            using(new XLWorksheetMergedCellsCalculatorWrapper(_columns))
+            using (new XLWorksheetMergedCellsCalculatorWrapper(_columns))
             {
                 _columns.ForEach(c => c.AdjustToContents(startRow, endRow));
             }
@@ -97,7 +97,7 @@ namespace ClosedXML.Excel
 
         public IXLColumns AdjustToContents(Double minWidth, Double maxWidth)
         {
-            using(new XLWorksheetMergedCellsCalculatorWrapper(_columns))
+            using (new XLWorksheetMergedCellsCalculatorWrapper(_columns))
             {
                 _columns.ForEach(c => c.AdjustToContents(minWidth, maxWidth));
             }
@@ -106,7 +106,7 @@ namespace ClosedXML.Excel
 
         public IXLColumns AdjustToContents(Int32 startRow, Double minWidth, Double maxWidth)
         {
-            using(new XLWorksheetMergedCellsCalculatorWrapper(_columns))
+            using (new XLWorksheetMergedCellsCalculatorWrapper(_columns))
             {
                 _columns.ForEach(c => c.AdjustToContents(startRow, minWidth, maxWidth));
             }
@@ -115,7 +115,7 @@ namespace ClosedXML.Excel
 
         public IXLColumns AdjustToContents(Int32 startRow, Int32 endRow, Double minWidth, Double maxWidth)
         {
-            using( new XLWorksheetMergedCellsCalculatorWrapper(_columns))
+            using (new XLWorksheetMergedCellsCalculatorWrapper(_columns))
             {
                 _columns.ForEach(c => c.AdjustToContents(startRow, endRow, minWidth, maxWidth));
             }
